@@ -8,4 +8,4 @@
 > Node.js是一套用来编写高性能网络服务器的JavaScript工具包
 
 [expressjs api](http://expressjs.com/api.html)
-> express是一个基于nodejs生成web内容，继承REST服务的高效框架
+> express-js是一个基于nodejs生成web内容，继承REST服务的高效框架
