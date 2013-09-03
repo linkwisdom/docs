@@ -1,16 +1,22 @@
 1. 变量声明用var
-* 变量声明务必用var
+
+> 变量声明务必用var
 
 2. 常量定义
-* 使用大写字母和下划线_
-* 注释用@const
+
+> 使用大写字母和下划线_
+
+> 注释用@const
 
 3. 分号使用
-* 在赋值函数变量，数组，关联数组后不使用分号结束会引起许多问题
-* 赋值，函数调用，返回值后务必用分号结束
+
+> 在赋值函数变量，数组，关联数组后不使用分号结束会引起许多问题
+
+> 赋值，函数调用，返回值后务必用分号结束
 
 4. 函数嵌套
-* 函数嵌套很有用，但是要灵活掌握
+
+> 函数嵌套很有用，但是要灵活掌握
 
 5. 在非函数的块元素里面定义函数
 
@@ -19,9 +25,12 @@
     }
 
 6. 异常
-* 谨慎在代码中屏蔽错误，避免调试发现不到问题
-* 组件中的异常处理最好封装处理
-* 编写必要的自定义异常
+
+> 谨慎在代码中屏蔽错误，避免调试发现不到问题
+
+> 组件中的异常处理最好封装处理
+
+> 编写必要的自定义异常
 
 7. 使用兼容性好的标准特性
 8. 使用基本类型，避免使用封装类
@@ -48,8 +57,10 @@
 	obj.foo = null;
 
 12. 闭包
-* 闭包在JS中非常有用
-* 避免闭包中绑定DOM事件
+
+> 闭包在JS中非常有用
+
+> 避免闭包中绑定DOM事件
 
 <pre>
     function foo(element, a, b) {
@@ -72,8 +83,10 @@ the function closure keeps a reference to element, a, and b even if it never use
 </pre>
 
 1 3. eval
-* 建议只用于反序列化数据或RPC解析中使用
-* eval用户的输入内容是危险的
+
+> 建议只用于反序列化数据或RPC解析中使用
+
+> eval用户的输入内容是危险的
 
 1 4. with
 :不要使用
@@ -90,20 +103,28 @@ the function closure keeps a reference to element, a, and b even if it never use
 Answer: anything. The local variable x could be clobbered by a property of foo and perhaps it even has a setter, in which case assigning 3 could cause lots of other code to execute. Don't use with.
 
 1 5. this
-* Only in object constructors, methods, and in setting up closures
-* this在很多情况下指向的是全局根对象(eval, 闭包内函数,DOM事件绑定，全局代码)
-* apply和call能够改变this的指向
+
+> Only in object constructors, methods, and in setting up closures
+
+> this在很多情况下指向的是全局根对象(eval, 闭包内函数,DOM事件绑定，全局代码)
+
+> apply和call能够改变this的指向
 
 因为this很容易用错，因此在下面的场合中避免使用this
 
-* in constructors
-* in methods of objects (including in the creation of closures)
+
+> in constructors
+
+> in methods of objects (including in the creation of closures)
 
 1 6. for-in 遍历
-* for-in遍历常常被错误用来遍历一个数组
-* for-in遍历的是对象的属性，包括原型链中的值，但不包括数组中索引
 
-*
+> for-in遍历常常被错误用来遍历一个数组
+
+> for-in遍历的是对象的属性，包括原型链中的值，但不包括数组中索引
+
+
+>
 
     function printArray(arr) {
       for (var key in arr) {
@@ -129,11 +150,14 @@ Answer: anything. The local variable x could be clobbered by a property of foo a
 
 1 7. 关联数组 Associate Array
 
-* 不要用Array对象作为Map/Hash对象
+
+> 不要用Array对象作为Map/Hash对象
 
 1 8. 多行字符串文本
-* 使用+连接字符串或者使用数组组织过长的字符串
-* 不要使用\组织多行，对JS的压缩后有不可控制的风险
+
+> 使用+连接字符串或者使用数组组织过长的字符串
+
+> 不要使用\组织多行，对JS的压缩后有不可控制的风险
 
 :
 
