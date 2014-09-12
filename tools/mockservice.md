@@ -16,7 +16,7 @@
 
 ### 配置
 
-
+```js
     ms.config({
         name: 'nirvana',
         dir: './nirvana-workspace/nirvana/debug'
@@ -36,9 +36,10 @@
          name: 'chunhua',
          dir: './chunhua-workspace/chunhua/debug/'
     });
-
+```
 ### 构造
 
+```
     define(function (require, exports, module) {
         var random = require('random');
         var template = require('template');
@@ -56,3 +57,4 @@
             }
         };
     });
+```
