@@ -37,9 +37,10 @@
          dir: './chunhua-workspace/chunhua/debug/'
     });
 ```
+
 ### 构造
 
-```
+```js 
     define(function (require, exports, module) {
         var random = require('random');
         var template = require('template');
